@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SMACSS</title>
+    <link rel="stylesheet" href="../css/main.css" title="" type="" />
+    <style type="text/css" media="all">
+    .input-option {
+      display: none;
+    }
+
+    input#op:checked ~ .input-option {
+      display: block;
+    }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="checkbox" id="male" name='gender'>
+      <label for="male">male</label>
+
+      <input type="checkbox" id="female" name='gender'>
+      <label for="female">male</label>
+
+      <input type="checkbox" id="op" name='gender'>
+      <label for="opt">Other?</label>
+
+      <div class='input-option'>
+        <input type="text" id="other">
+        <label for="other">Please Specify</label>
+      </div>
+    </form>
+  </body>
+</html>

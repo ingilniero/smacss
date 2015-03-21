@@ -1,0 +1,7 @@
+.input-option {
+  display: none;
+}
+
+input#op:checked ~ .input-option {
+  display: block;
+}

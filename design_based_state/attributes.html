@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SMACSS</title>
+    <link rel="stylesheet" href="../css/main.css" title="" type="" />
+    <style type="text/css" media="all">
+        .btn {
+          padding: 10px;
+        }
+        .btn[data-state=default] { color: #555; }
+        .btn[data-state=pressed] { color: #000; }
+        .btn[data-state=disabled] { opacity: 0.5; }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button class='btn' data-state='default'>Default</button>
+      <button class='btn' data-state='pressed'>Pressed</button>
+      <button class='btn' data-state='disabled'>Disabled</button>
+    </div>
+  </body>
+</html>
+
+
